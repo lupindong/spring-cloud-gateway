@@ -46,4 +46,41 @@
 			<optional>true</optional>
 		</dependency>
 	</dependencies>
+
+
+	<repositories>
+		<repository>
+			<id>tech-releases</id>
+			<url>http://nexus.oristarcloud.com/repository/maven-releases/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+		<repository>
+			<id>tech-snapshots</id>
+			<url>http://nexus.oristarcloud.com/repository/maven-snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>maven-releases</id>
+			<url>http://nexus.oristarcloud.com/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>maven-snapshots</id>
+			<url>http://nexus.oristarcloud.com/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>

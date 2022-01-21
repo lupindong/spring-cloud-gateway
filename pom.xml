@@ -128,9 +128,9 @@
 		<module>spring-cloud-gateway-webflux</module>
 		<module>spring-cloud-gateway-server</module>
 		<module>spring-cloud-starter-gateway</module>
-<!--		<module>spring-cloud-gateway-sample</module>-->
-<!--		<module>spring-cloud-gateway-integration-tests</module>-->
-<!--		<module>docs</module>-->
+		<!--		<module>spring-cloud-gateway-sample</module>-->
+		<!--		<module>spring-cloud-gateway-integration-tests</module>-->
+		<!--		<module>docs</module>-->
 	</modules>
 
 	<build>
@@ -142,10 +142,6 @@
 			<plugin>
 				<groupId>io.spring.javaformat</groupId>
 				<artifactId>spring-javaformat-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
